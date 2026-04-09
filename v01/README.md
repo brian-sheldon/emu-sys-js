@@ -30,6 +30,11 @@ on                ; starts the cpu
 off               ; stops the cpu
 PageUp            ; connects keyboard to the system
 PageDown          ; connects keyboard to the monitor
+loops <num>       ; returns or sets the number of instruction to run
+                  ; per frame, I believe the frame time is 8 ms, about
+                  ; 120 frames/second
+                  ; the default value is somewhat low as I wasn't concerned
+                  ; with speed during development
 baud <rate>       ; emulates what it is like using a slow connection
                   ; 0 resets to normal
 led <addr>        ; display byte at addr in an led like display
