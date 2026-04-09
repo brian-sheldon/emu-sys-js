@@ -77,7 +77,24 @@ fat               ; displays a somewhat crude fat table
 sdir              ; output a sorted dir of the current disk similar to the
                   ; sdir command in cp/m
 colors            ; display all terminal colors
-       ;
+----- some extra features, not implemented well
+--- trs-80 model 1 partial emulation, do this sequence to run
+> node emu
+>>> zz
+>>> on
+PageUp
+--- at this point basic commands can be run, but the emulation is only
+partially implemented.  There is no way to enter some keys as the keyboard
+is not emulated, the basic has been hacked to get keys from the stdio and
+send output to the stdout, so no break key or clear key.  Also, there are not special characters like the
+graphics characters.  The rom is also not write protected.
+--- trs-80 forth by Lawrence Kesteloot, do this sequence to run
+> node emu
+>>> zz
+>>> cpu forth
+>>> on
+PageUp
+--- type words to see what forth words are implemented
 ```
 ## CP/M Command Reference (very incomplete)
 ```
