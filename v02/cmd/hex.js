@@ -1,3 +1,8 @@
+
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 //
 // Some commonly used hex, oct, bin, asc, hexdump globals
 // and a Hex class.  Plus a bonus ruler to measure output,

@@ -1,4 +1,8 @@
 
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 if ( typeof window !== 'object' ) {
   global.EmuTestSub = require( './emu.test.sub.js' );
 }

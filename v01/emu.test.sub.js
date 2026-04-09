@@ -1,4 +1,8 @@
 
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 class EmuTestSub {
   constructor() {
     log.out( 'EmuTestSub constructed ...' );

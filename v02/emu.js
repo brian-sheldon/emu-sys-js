@@ -1,3 +1,8 @@
+
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 //
 // The main program for the emu system
 //

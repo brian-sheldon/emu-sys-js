@@ -1,4 +1,8 @@
 
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 if ( typeof window !== 'object' ) {
   global.EmuFsNode = require( './emu.fs.node.js' );
   //global.EmuDskMon = require( './emu.dsk.mon.js' );

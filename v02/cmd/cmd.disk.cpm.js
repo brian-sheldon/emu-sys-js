@@ -1,4 +1,8 @@
 
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 const CmdFile = require( './cmd.file.js' );
 
 class CmdDiskCpm extends CmdFile {

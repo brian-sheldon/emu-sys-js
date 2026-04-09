@@ -1,4 +1,8 @@
 
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 if ( typeof window !== 'object' ) {
   //global.EmuMonCli = require( './emu.mon.cli.js
   global.EmuIoKeyMapJson = require( './emu.io.key.map.json' );

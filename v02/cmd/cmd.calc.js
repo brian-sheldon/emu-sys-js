@@ -1,4 +1,8 @@
 
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 const Hex = require( './hex.js' );
 const NumInOut = require( './num.in.out.js' );
 

@@ -1,4 +1,8 @@
 
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 if ( typeof window !== 'object' ) {
   global.EmuCmdDisk = require( './cmd.disk.js' );
   global.EmuCmdSys = require( './cmd.sys.js' );
@@ -47,6 +51,7 @@ class EmuCmd {
     return str;
   }
   exec( io, cmd ) {
+    cmd = cmd.trim();
     let parms = cmd.split( ' ' );
     let plen = parms.length;
     let p0 = plen > 0 ? parms[0] : '' ;

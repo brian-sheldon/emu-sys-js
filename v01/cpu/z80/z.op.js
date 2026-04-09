@@ -1,4 +1,16 @@
 
+//
+// Extracted from the emulator found at
+//
+//   https://trsjs.48k.ca/
+//
+// and written by 
+//
+//   Peter Phillips
+//
+// modified by Brian Sheldon
+//
+
 
 // z.op.js
 // ========

@@ -1,4 +1,8 @@
 
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 if ( typeof window !== 'object' ) {
   global.EmuIoNode = require( './emu.io.node.js' );
   global.EmuIoKeyMap = require( './emu.io.key.map.js' );

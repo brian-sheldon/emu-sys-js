@@ -1,8 +1,7 @@
+
+// Copyright (C) 2026 Brian Sheldon
 //
-// cpu.80.js
-//
-// Copyright 2025 - Brian Sheldon
-//
+// MIT License
 
 let CpuBase = require( './cpu.base.js' );
 let Cpu80Reg = require( './cpu.80.reg.js' );

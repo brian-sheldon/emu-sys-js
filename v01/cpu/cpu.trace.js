@@ -1,4 +1,8 @@
 
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 if ( typeof window !== 'object' ) {
   global.fs = require( 'fs' );
   global.JS8080 = require( './8080/js8080.js' );

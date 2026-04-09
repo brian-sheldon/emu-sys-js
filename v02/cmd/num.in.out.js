@@ -1,3 +1,9 @@
+
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
+
 //
 // A collection of utils to handle parsing of numbers for input and
 // formatting of numbers for output, plus validity checking.

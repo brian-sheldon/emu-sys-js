@@ -1,4 +1,8 @@
 
+// Copyright (C) 2026 Brian Sheldon
+//
+// MIT License
+
 class Cpu80Reg {
   constructor( cpu, z80 ) {
     this.cpu = cpu;
