@@ -87,8 +87,6 @@ https://github.com/maly/8080js
 
 I am not sure where I found the original trek80 basic source, but I have a modified version of it on I believe the d: disk.  I modified to run better in termux as it is not practical to have too many columns as the font is too small to easily read.  I am not sure if my modified version is working completely.  The code is very difficult to follow.
 
-To be continued ...
-
 ## trs-80 forth
 
 Info on this forth is found at,
@@ -106,4 +104,7 @@ https://www.my-trs-80.com/#!runFile=xHNZeLu3X6tLVA4FoEX3
 I extracted the binary for this forth from the online demo.  The method I used is found in my github project here.
 
 https://github.com/brian-sheldon/forth-scan-code
+
+
+# To be continued ...
 
