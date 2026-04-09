@@ -10,8 +10,13 @@ Clone this repository.
 > node emu
 
 >>> zz
->>>
-
+>>> b
+>>> on
+press PageUp to connect keyboard input to system
+a: dir
+press PageDown to connect keyboard to monitor
+>>> bye
+```
 ## Monitor Command Reference (very incomplete)
 Note: Some commands will autorepeat and display the next data
 ```
