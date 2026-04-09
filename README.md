@@ -85,3 +85,21 @@ I am not sure where I found the original trek80 basic source, but I have a modif
 
 To be continued ...
 
+## trs-80 forth
+
+Info on this forth is found at,
+
+https://www.teamten.com/lawrence/projects/forth-interpreter/
+
+The source is found at,
+
+https://github.com/lkesteloot/trs80
+
+An online demo can be found here.
+
+https://www.my-trs-80.com/#!runFile=xHNZeLu3X6tLVA4FoEX3
+
+I extracted the binary for this forth from the online demo.  The method I used is found in my github project here.
+
+https://github.com/brian-sheldon/forth-scan-code
+
