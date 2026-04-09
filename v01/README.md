@@ -18,7 +18,8 @@ press PageDown to connect keyboard to monitor
 >>> bye
 ```
 ## Monitor Command Reference (very incomplete)
-Note: Some commands will autorepeat and display the next data
+Note: Some commands will autorepeat and display the next data.
+There is currently no way to change what disk is in the drive.
 ```
 ctrl-d or bye     ; exits the system
 zz                ; configures a cpm system, mounts some disks
