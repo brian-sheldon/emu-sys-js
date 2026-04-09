@@ -5,6 +5,10 @@ This is basically a small command shell, with lots of commands to examine disks,
 
 Note:  As much as possible, I have tried to minimize any changes to the original code in these various libraries, but to quickly get this working, I have made varying degrees of modifications.  I hope to eventually go back and undo these changes and use some form of interface to sync up the various api's.
 
+# designed not to be taken too seriously
+
+Not meant to be a robust emulation system, but rather a system that can be quickly modified as it is written in javascript.  So for example, if you need some custom method to analyze some file, this system provides a ready made cli, just add in some custom code to process the data from the file.  Then this cli can give the convenience of repeating commands, etc.
+
 # status
 
 In the beginning, this emulation was using z80 cpu emulation, then I wanted to try an 8080 emulator known for its accuracy and test this with some tools. In the process, the z80 emulation was nolong compatible.  Then one day I wanted to try some z80 code and quickly changed things again.  I did manage to get both cpu emulations working, but at the expense of a lot of quick changes that probably need some cleanup and possible better structure.  But that was a while ago, so I don't remember exactly how I switch.  But I decided to make my first upload of this code anyway.  Also, there are a lot of weird commands in the cli as I was doing a lot of experimenting and did not put much thought into making them.
