@@ -31,8 +31,57 @@ I pretty much put this project aside for about a year.  Then I thought, maybe ot
 
 So I recently began cleaning up the code and reorganizing the structure a bit.  The first challenge was building a new module, to act as a hub for the various cpu modules I am wanting to switch between.  So far, I managed to get the one Intel 8080 module and the one z80 module running.  Mostly, I modified the z80 module to have a similar api to the 8080 module, as the z80 module was already heavily modified as it was originally embedded within the originally TRS-80 emulator.
 
+# Credits and notes on included code and files
 
+At this point, I have been focused on just getting all of this to work.  This github project is primarily a backup during development.  I do however want to in the future ensure to acknowlege any code and other files used.  I will gradually add to the following as I find time.
 
+## original inspiration
 
+I was originally inspired to do this after having used this online cp/m emulator.
 
+https://st.sdf-eu.org/i8080/emu8080.html
+
+Further info on this can be found at.
+
+https://st.sdf-eu.org/i8080/index.html
+
+After initially using, I built an Android application that ran this exact same applicaton inside an android webview.  This worked for awhile, but eventually the web db technology used by this application was replaced by a newer technology.  For this reason, the disks nolonger worked.  I did upgrade my Android application, by using a javascript interface to provide local access to disk images stored on the sdcard.  Unfortunately, an Android update would require me to upgrade this app in order for it to work.
+
+Having familiarized myself with the working of this online app, I learned about the js8080 8080 cpu emulator and the z80pack.
+
+## cp/m images and emulation techniques
+
+The cp/m disk images used are partially from those found at:
+
+https://github.com/udo-munk/z80pack
+
+File have been added to some of these images.  For instance, the cp/m boot image includes my code for the m command that is used in cp/m to run a monitor command without switching to the monitor.  The source is also included.
+
+I have also used the same emulation technique as used by the z80pack to intercept ports to support the bios functions.  I have added another port ( port 66 or $42 hex ), that is used by the m command to trigger the monitor to read the cp/m command buffer and run this in the monitor.
+
+## z80 cpu emulation
+
+I have used the code from the following site:
+
+https://trsjs.48k.ca/
+
+The code is the portion of the trsemu-1.6.js file that does the z80 cpu emulation.  I have modified this code to use an api compatible with my emulation system, which may change in the future.  I also extracted the disassembler from this system and use it to produce the z80 disassembly in the monitor when it is in z80 mode.
+
+I have also built my own variant of this trs-80 emulator that runs under nodejs, actually built before this.  Some of the code is based on this nodejs trs-80 emulator.  However, my trs-80 emulation code is rather a mess.
+
+## 8080 cpu emulation
+
+One variant I have used is from the following.  It has been slightly modified to work with this emulation system.  I hope to create some intermediary between the various emulated cpus and this system to try and keep these third party cpu emulators close to their original form.  This may not be practical, yet to see.
+
+https://github.com/jharwood0/Sim8080
+
+Another variant I used is this one.
+
+https://github.com/maly/8080js
+
+## trek80
+
+I am not sure where I found the original trek80 basic source, but I have a modified version of it on I believe the d: disk.  I modified to run better in termux as it is not practical to have too many columns as the font is too small to easily read.  I am not sure if my modified version is working completely.  The code is very difficult to follow.
+
+To be continued ...
 
