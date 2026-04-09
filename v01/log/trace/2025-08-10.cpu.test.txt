@@ -1,0 +1,15 @@
+      pc0000:
+   1  0000: f3     DI
+   1  0001: af     XOR A
+   1  0002: c37406 JP 674
+      pc0674:
+   1  0674: d3ff   OUT (ff),A
+   9  0676: 21d206 LD HL,6d2
+   9  0679: 110040 LD DE,4000
+   9  067c: 013600 LD BC,36
+ 1c9  067f: ed     ILLEGAL
+      pc0681:
+   8  0681: 3d     DEC A
+   8  0682: 3d     DEC A
+   8  0683: 20     ILLEGAL
+inst: 11   ops: 512
