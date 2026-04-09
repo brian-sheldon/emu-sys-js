@@ -34,7 +34,7 @@ class CmdCalc {
       let v = this.stack.pop();
       return v;
     } else {
-      console.log( 'stack empty' );
+      console.log( '... stack empty ...' );
     }
   }
   len() {
@@ -43,7 +43,7 @@ class CmdCalc {
   at( i ) {
     let v = this.stack.at( i );
     if ( v === undefined ) {
-      console.log( 'stack len is only ' + len );
+      console.log( '... index out of stack range ...' );
     }
     return v;
   }
@@ -138,11 +138,11 @@ class CmdCalc {
         // print
         case '.':
           v = this.pop();
-          this.writeValueSp( v );
+          write( dec0( v ) + ' ' );
           break;
         case '..':  // dup and return
           v = this.at( - 1 );
-          this.writeValueSp( v );
+          write( dec0( v ) + ' ' );
           break;
         case 'cr':
           write( '\n' );

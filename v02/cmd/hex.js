@@ -10,7 +10,12 @@ function initHex() {
     '....^....0....^....0....^....0....^....0....^....0....^....0....^....0....^....0....^....0....^....0'
   ];
   let h = new Hex();
+  global.dec0 = function( v, w = 0, ch = '0' ) {
+    if ( typeof( v ) != 'number' ) return ' '.repeat( w );
+    return v.toString().padStart( w, ch );
+  }
   global.hex0 = function( v, w = 0, ch = '0' ) {
+    if ( typeof( v ) != 'number' ) return ' '.repeat( w );
     return h.hex( v, w, ch );
   }
   global.hex2 = function( v, ch = '0' ) {
@@ -41,9 +46,11 @@ function initHex() {
     return h.asc( v );
   }
   global.oct0 = function( v, w = 0, ch = '0' ) {
+    if ( typeof( v ) != 'number' ) return ' '.repeat( w );
     return v.toString( 8 ).padStart( w, ch );
   }
   global.bin0 = function( v, w = 0, ch = '0' ) {
+    if ( typeof( v ) != 'number' ) return ' '.repeat( w );
     return v.toString( 2 ).padStart( w, ch );
   }
   global.bin4 = function( v, ch = '0' ) {
